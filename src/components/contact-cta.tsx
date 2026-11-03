@@ -13,7 +13,7 @@ export function ContactCTA() {
     >
       {/* Gradient background with animated shift */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[var(--color-primary)] via-[#06B6D4] to-[#0891B2] animate-gradient-shift"
+        className="absolute inset-0 bg-gradient-to-r from-[var(--color-primary)] via-[#0D9488] to-[#115E59] animate-gradient-shift"
         aria-hidden="true"
       />
       {/* Decorative wave shapes */}
@@ -25,16 +25,16 @@ export function ContactCTA() {
       <div className="container relative text-center">
         <div className="max-w-3xl mx-auto animate-fade-in-up">
           <h2 id="contact-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-            Have a challenging problem to solve?
+            Looking for customers to feel genuinely helped?
           </h2>
           <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-10">
-            Let&apos;s <span className="font-semibold">engineer something exceptional</span> together. I&apos;m always open to discussing new opportunities,
-            interesting problems, or potential collaborations.
+            Let&apos;s talk about how I can bring <span className="font-semibold">excellent, warm, reliable customer service</span> to
+            your team. I&apos;m open to new opportunities that put customers first.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="mailto:pnyanguwo@proton.me"
+              href="mailto:nonhlahlasunrise@gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 text-base font-medium text-[var(--color-primary)] bg-white rounded-lg hover:bg-white/90 hover:shadow-xl transition-all duration-200"
             >
               <Mail className="h-5 w-5" aria-hidden="true" />

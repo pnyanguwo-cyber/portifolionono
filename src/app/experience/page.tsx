@@ -1,9 +1,9 @@
 import React from "react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { FeaturedProjects } from "@/components/featured-projects";
+import { ProfessionalExperience } from "@/components/professional-experience";
 
-export default function ProjectsPage() {
+export default function ExperiencePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navigation />
@@ -16,17 +16,17 @@ export default function ProjectsPage() {
           <div className="container relative">
             <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
               <span className="inline-block px-3 py-1 text-xs font-medium text-[var(--color-primary)] bg-[var(--color-primary-light)] rounded-full mb-4">
-                ALL PROJECTS
+                MY CAREER
               </span>
               <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text-heading)] mb-4 leading-tight">
-                Featured Projects
+                Professional Experience
               </h1>
               <p className="text-[var(--color-text-muted)] text-lg">
-                Production applications built with security, scalability, and user experience at the core.
+                Three years of customer service, sales and client support — with measurable results.
               </p>
             </div>
 
-            <FeaturedProjects />
+            <ProfessionalExperience />
           </div>
         </section>
       </main>

@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from "react";
 
 const ROLES = [
-  "Software Engineer",
-  "AI Systems Builder",
-  "Product Problem Solver",
+  "Customer Service Representative",
+  "Client Support Specialist",
+  "Contact Centre Specialist",
 ];
 
 const TYPE_SPEED_MS = 70;

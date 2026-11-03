@@ -9,7 +9,7 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/#about" },
   { name: "Skills", href: "/#skills" },
-  { name: "Projects", href: "/#projects" },
+  { name: "Experience", href: "/#experience" },
   { name: "Contact", href: "/#contact" },
 ];
 
@@ -43,13 +43,13 @@ export function Navigation() {
           <Link
             href="/"
             className="flex items-center gap-2 text-[var(--color-text-heading)] font-semibold text-xl"
-            aria-label="Panashe Nyanguwo - Home"
+            aria-label="Nonhlahla Ngulube - Home"
             onClick={closeMobileMenu}
           >
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-primary)] text-white font-bold text-sm">
-              PN
+              NN
             </span>
-            <span className="hidden sm:block">Panashe Nyanguwo</span>
+            <span className="hidden sm:block">Nonhlahla Ngulube</span>
           </Link>
 
           {/* Desktop Navigation */}

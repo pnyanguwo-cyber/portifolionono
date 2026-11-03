@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   const [year, setYear] = useState<number | null>(null);
@@ -25,15 +24,15 @@ export function Footer() {
             <Link
               href="/"
               className="flex items-center gap-2 text-[var(--color-text-heading)] font-semibold text-xl mb-4"
-              aria-label="Panashe Nyanguwo - Home"
+              aria-label="Nonhlahla Ngulube - Home"
             >
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-primary)] text-white font-bold text-sm">
-                PN
+                NN
               </span>
-              <span>Panashe Nyanguwo</span>
+              <span>Nonhlahla Ngulube</span>
             </Link>
             <p className="text-[var(--color-text-muted)] text-sm leading-relaxed max-w-xs">
-              Software Engineer building secure, scalable software solutions.
+              Customer Service Representative delivering excellent client support by phone, email, WhatsApp and digital channels.
             </p>
           </div>
 
@@ -69,10 +68,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#projects"
+                  href="/#experience"
                   className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
                 >
-                  Projects
+                  Experience
                 </Link>
               </li>
               <li>
@@ -94,34 +93,25 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:pnyanguwo@proton.me"
+                  href="mailto:nonhlahlasunrise@gmail.com"
                   className="flex items-center gap-3 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
                 >
                   <Mail className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
-                  <span>pnyanguwo@proton.me</span>
+                  <span>nonhlahlasunrise@gmail.com</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/pnyanguwo-cyber"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="tel:+263777240444"
                   className="flex items-center gap-3 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
                 >
-                  <GithubIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
-                  <span>GitHub</span>
+                  <Phone className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
+                  <span>0777 240 444</span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://linkedin.com/in/pnyanguwo-cyber"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
-                >
-                  <LinkedinIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
-                  <span>LinkedIn</span>
-                </a>
+              <li className="flex items-center gap-3 text-sm text-[var(--color-text-muted)]">
+                <MapPin className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
+                <span>Harare, Zimbabwe</span>
               </li>
             </ul>
           </div>
@@ -130,7 +120,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 pt-6 border-t border-[var(--color-border)] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[var(--color-text-muted)]">
-            &copy; {year ?? ""} Panashe Nyanguwo. All rights reserved.
+            &copy; {year ?? ""} Nonhlahla Ngulube. All rights reserved.
           </p>
           <p className="text-sm text-[var(--color-text-muted)]">
             Built with Next.js, TypeScript & Tailwind CSS

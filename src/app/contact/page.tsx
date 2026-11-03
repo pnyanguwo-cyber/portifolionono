@@ -1,14 +1,12 @@
 import React from "react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { ExternalLink, Mail, FileText } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { ExternalLink, Mail, Phone, MapPin, FileText } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactPage() {
-  const email = "pnyanguwo@proton.me";
-  const github = "https://github.com/pnyanguwo-cyber";
-  const linkedin = "https://linkedin.com/in/pnyanguwo-cyber";
+  const email = "nonhlahlasunrise@gmail.com";
+  const phone = "+263 777 240 444";
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -31,7 +29,7 @@ export default function ContactPage() {
               Contact
             </h1>
             <p className="text-lg text-[var(--color-text-body)] leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: "100ms" }}>
-              Available for full-time and contract roles. Feel free to reach out.
+              Available for full-time roles in customer service and client support. Feel free to reach out.
             </p>
           </div>
         </section>
@@ -57,17 +55,15 @@ export default function ContactPage() {
 
               <article className="border border-[var(--color-border)] rounded-xl p-6 flex items-center gap-4 bg-white hover:border-[var(--color-primary)]/30 hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
                 <div className="p-3 rounded-lg bg-[var(--color-primary-light)] text-[var(--color-primary)] flex-shrink-0">
-                  <GithubIcon className="h-5 w-5" />
+                  <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1">GitHub</p>
+                  <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1">Phone / WhatsApp</p>
                   <a
-                    href={github}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`tel:+263777240444`}
                     className="text-[var(--color-text-heading)] hover:text-[var(--color-primary)] transition-colors flex items-center gap-1"
                   >
-                    github.com/pnyanguwo-cyber
+                    0777 240 444
                     <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 </div>
@@ -75,19 +71,13 @@ export default function ContactPage() {
 
               <article className="border border-[var(--color-border)] rounded-xl p-6 flex items-center gap-4 bg-white hover:border-[var(--color-primary)]/30 hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
                 <div className="p-3 rounded-lg bg-[var(--color-primary-light)] text-[var(--color-primary)] flex-shrink-0">
-                  <LinkedinIcon className="h-5 w-5" />
+                  <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1">LinkedIn</p>
-                  <a
-                    href={linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--color-text-heading)] hover:text-[var(--color-primary)] transition-colors flex items-center gap-1"
-                  >
-                    linkedin.com/in/pnyanguwo-cyber
-                    <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
+                  <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1">Location</p>
+                  <p className="text-[var(--color-text-heading)]">
+                    753 Mount Pleasant Heights, Harare, Zimbabwe
+                  </p>
                 </div>
               </article>
 

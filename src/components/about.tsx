@@ -1,28 +1,28 @@
 "use client";
 
 import React from "react";
-import { Code2, ShieldCheck, Sparkles } from "lucide-react";
+import { Headset, ClipboardCheck, Users } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const principles = [
   {
-    title: "Build",
-    description: "Production-ready applications designed for scale and reliability.",
-    icon: Code2,
+    title: "Client Support",
+    description: "Handling enquiries and complaints with clear communication and practical solutions, first time.",
+    icon: Headset,
     color: "text-[var(--color-primary)]",
     bgColor: "bg-[var(--color-primary-light)]",
   },
   {
-    title: "Secure",
-    description: "Security-first engineering with zero-trust principles throughout.",
-    icon: ShieldCheck,
+    title: "Contact Centre Operations",
+    description: "Accurate CRM records, documentation and reporting across telephone, email, WhatsApp and digital channels.",
+    icon: ClipboardCheck,
     color: "text-[var(--color-success)]",
     bgColor: "bg-[var(--color-success-light)]",
   },
   {
-    title: "Innovate",
-    description: "AI-powered solutions and intelligent automation for modern problems.",
-    icon: Sparkles,
+    title: "Customer Relationships",
+    description: "Persistently following issues through to resolution, escalating and coordinating with teams to keep customers informed.",
+    icon: Users,
     color: "text-[var(--color-cyan)]",
     bgColor: "bg-[var(--color-cyan-light)]",
   },
@@ -50,21 +50,24 @@ export function About() {
                 About Me
               </span>
               <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-[var(--color-text-heading)] mb-5 leading-tight">
-                Engineering beyond the{' '}
-                <span className="text-gradient-animate">interface.</span>
+                Service beyond the{' '}
+                <span className="text-gradient-animate">reservation.</span>
               </h2>
               <p className="text-[var(--color-text-body)] text-lg leading-relaxed mb-4">
-                  I&apos;m a Software Engineer focused on building secure, high-performance applications
-                  that solve real problems. My work blends modern technologies with strong security principles and a user-first mindset.
+                  Customer-focused professional with over three years of experience across customer service,
+                  client communication, sales and relationship support, handling enquiries and following issues
+                  through to resolution across telephone and digital channels.
               </p>
               <p className="text-[var(--color-text-body)] leading-relaxed">
-                From scalable WhatsApp-based platforms to AI-assisted development workflows, I focus on delivering
-                production systems that are both powerful and trustworthy.
+                From contact centre operations to sales and client relations, I focus on understanding customer
+                needs, explaining products and services clearly and keeping accurate records every step of the way.
+                I hold a BA Honours Degree in Media and Cultural Studies and communicate fluently in English and
+                Shona, with Ndebele as a native language.
               </p>
             </div>
           </Reveal>
 
-          {/* Right: Engineering Principles */}
+          {/* Right: Core strengths */}
           <Reveal delay={120} className="lg:col-span-5">
             <div className="grid sm:grid-cols-3 lg:grid-cols-1 gap-4">
               {principles.map((principle) => (

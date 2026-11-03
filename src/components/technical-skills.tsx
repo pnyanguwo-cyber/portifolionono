@@ -1,68 +1,60 @@
 "use client";
 
 import React from "react";
-import { Code2, Sparkles, ShieldCheck, Cpu } from "lucide-react";
+import { Headset, MessageCircle, Gauge, MonitorSmartphone } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const skillCategories = [
   {
-    title: "Languages & Frameworks",
-    icon: Code2,
+    title: "Customer Care",
+    icon: Headset,
     color: "text-[var(--color-primary)]",
     bgColor: "bg-[var(--color-primary-light)]",
     skills: [
-      { name: "TypeScript", color: "bg-blue-100 text-blue-700" },
-      { name: "JavaScript", color: "bg-yellow-100 text-yellow-700" },
-      { name: "Python", color: "bg-green-100 text-green-700" },
-      { name: "Go", color: "bg-cyan-100 text-cyan-700" },
-      { name: "Next.js", color: "bg-gray-100 text-gray-700" },
-      { name: "React", color: "bg-cyan-100 text-cyan-700" },
-      { name: "React Native", color: "bg-cyan-100 text-cyan-700" },
-      { name: "Expo", color: "bg-gray-800 text-white" },
-      { name: "Node.js", color: "bg-green-100 text-green-700" },
+      { name: "Enquiry & Complaint Handling", color: "bg-teal-50 text-teal-700" },
+      { name: "Needs Identification", color: "bg-teal-50 text-teal-700" },
+      { name: "Problem Solving", color: "bg-stone-100 text-stone-700" },
+      { name: "First-Contact Resolution", color: "bg-amber-50 text-amber-700" },
+      { name: "Customer Follow-Up", color: "bg-amber-50 text-amber-700" },
+      { name: "Relationship Management", color: "bg-emerald-50 text-emerald-700" },
     ],
   },
   {
-    title: "AI & Automation",
-    icon: Sparkles,
+    title: "Communication",
+    icon: MessageCircle,
     color: "text-[var(--color-cyan)]",
     bgColor: "bg-[var(--color-cyan-light)]",
     skills: [
-      { name: "Gemini API", color: "bg-blue-100 text-blue-700" },
-      { name: "Claude Code", color: "bg-orange-100 text-orange-700" },
-      { name: "Prompt Engineering", color: "bg-purple-100 text-purple-700" },
-      { name: "RAG Systems", color: "bg-indigo-100 text-indigo-700" },
-      { name: "Vector Search", color: "bg-violet-100 text-violet-700" },
-      { name: "WhatsApp Cloud API", color: "bg-green-100 text-green-700" },
+      { name: "Clear Verbal Communication", color: "bg-emerald-50 text-emerald-700" },
+      { name: "Written Communication", color: "bg-stone-100 text-stone-700" },
+      { name: "Telephone Support", color: "bg-teal-50 text-teal-700" },
+      { name: "Email, WhatsApp & Digital", color: "bg-teal-50 text-teal-700" },
+      { name: "Issue Escalation & Team Coordination", color: "bg-amber-50 text-amber-700" },
     ],
   },
   {
-    title: "Security & Infrastructure",
-    icon: ShieldCheck,
+    title: "Service Quality",
+    icon: Gauge,
     color: "text-[var(--color-success)]",
     bgColor: "bg-[var(--color-success-light)]",
     skills: [
-      { name: "HMAC Auth", color: "bg-red-100 text-red-700" },
-      { name: "Supabase RLS", color: "bg-green-100 text-green-700" },
-      { name: "PostgreSQL", color: "bg-blue-100 text-blue-700" },
-      { name: "pgvector", color: "bg-purple-100 text-purple-700" },
-      { name: "STRIDE Modeling", color: "bg-orange-100 text-orange-700" },
-      { name: "OWASP Top 10", color: "bg-yellow-100 text-yellow-700" },
-      { name: "Zero-Trust", color: "bg-emerald-100 text-emerald-700" },
+      { name: "Service Quality & SLA Compliance", color: "bg-emerald-50 text-emerald-700" },
+      { name: "Resolution Follow-Through", color: "bg-teal-50 text-teal-700" },
+      { name: "Records & Reporting", color: "bg-stone-100 text-stone-700" },
+      { name: "Documentation Accuracy", color: "bg-stone-100 text-stone-700" },
     ],
   },
   {
-    title: "Engineering",
-    icon: Cpu,
+    title: "Tools & Systems",
+    icon: MonitorSmartphone,
     color: "text-[var(--color-primary)]",
     bgColor: "bg-[var(--color-primary-light)]",
     skills: [
-      { name: "Git/GitHub", color: "bg-gray-100 text-gray-700" },
-      { name: "CI/CD", color: "bg-blue-100 text-blue-700" },
-      { name: "Vitest/Jest", color: "bg-yellow-100 text-yellow-700" },
-      { name: "Docker", color: "bg-blue-100 text-blue-700" },
-      { name: "Vercel", color: "bg-gray-800 text-white" },
-      { name: "Technical Writing", color: "bg-purple-100 text-purple-700" },
+      { name: "CRM Systems", color: "bg-teal-50 text-teal-700" },
+      { name: "Zendesk", color: "bg-stone-800 text-white" },
+      { name: "SAP & SAP C4C", color: "bg-teal-50 text-teal-700" },
+      { name: "Microsoft Office", color: "bg-amber-50 text-amber-700" },
+      { name: "Ticketing Systems", color: "bg-stone-100 text-stone-700" },
     ],
   },
 ];
@@ -82,13 +74,13 @@ export function TechnicalSkills() {
         <Reveal>
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-block px-3 py-1 text-xs font-medium text-[var(--color-primary)] bg-[var(--color-primary-light)] rounded-full mb-4">
-            MY TECHNICAL SKILLS
+            MY CORE SKILLS
           </span>
           <h2 id="skills-heading" className="text-3xl md:text-4xl font-bold text-[var(--color-text-heading)] mb-4 leading-tight">
-            Technologies I{' '}<span className="text-gradient-animate">Work With</span>
+            Skills I{' '}<span className="text-gradient-animate">Bring Every Day</span>
           </h2>
           <p className="text-[var(--color-text-muted)] text-lg">
-            A curated stack for building secure, scalable software systems.
+            A practical toolkit for delivering excellent customer experiences.
           </p>
         </div>
         </Reveal>

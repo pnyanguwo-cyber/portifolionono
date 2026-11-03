@@ -18,21 +18,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Panashe Nyanguwo — Software Engineer",
-  description: "Building innovative, secure and scalable software solutions with a focus on performance, user experience and trust.",
-  keywords: ["software engineering", "security architecture", "AI applications", "WhatsApp Business API", "Next.js", "Expo", "Supabase", "TypeScript", "Gemini"],
-  authors: [{ name: "Panashe T.E. Nyanguwo" }],
+  title: "Nonhlahla Ngulube — Customer Service Representative",
+  description: "Customer-focused professional delivering excellent client support across telephone and digital channels, with a proven record of first-contact resolution, SLA compliance and accurate CRM records.",
+  keywords: ["customer service", "client support", "contact centre operations", "CRM", "Zendesk", "SAP C4C", "customer satisfaction", "Harare", "Zimbabwe"],
+  authors: [{ name: "Nonhlahla Ngulube" }],
   openGraph: {
-    title: "Panashe Nyanguwo — Software Engineer",
-    description: "Building innovative, secure and scalable software solutions with a focus on performance, user experience and trust.",
+    title: "Nonhlahla Ngulube — Customer Service Representative",
+    description: "Customer-focused professional delivering excellent client support across telephone and digital channels, with a proven record of first-contact resolution, SLA compliance and accurate CRM records.",
     type: "website",
     locale: "en_ZW",
-    siteName: "Panashe Nyanguwo Portfolio",
+    siteName: "Nonhlahla Ngulube Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Panashe Nyanguwo — Software Engineer",
-    description: "Building innovative, secure and scalable software solutions with a focus on performance, user experience and trust.",
+    title: "Nonhlahla Ngulube — Customer Service Representative",
+    description: "Customer-focused professional delivering excellent client support across telephone and digital channels, with a proven record of first-contact resolution, SLA compliance and accurate CRM records.",
   },
   robots: {
     index: true,

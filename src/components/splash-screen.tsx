@@ -39,13 +39,13 @@ export function SplashScreen() {
       {/* Logo mark */}
       <div className="relative animate-splash-pop">
         <span className="flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-cyan)] text-white font-bold text-3xl shadow-xl shadow-[var(--color-primary)]/30">
-          PN
+          NN
         </span>
       </div>
 
       {/* Name */}
       <h1 className="mt-6 text-2xl md:text-3xl font-bold text-[var(--color-text-heading)] animate-splash-fade">
-        Panashe <span className="text-gradient-animate">Nyanguwo</span>
+        Nonhlahla <span className="text-gradient-animate">Ngulube</span>
       </h1>
 
       {/* Loading bar */}

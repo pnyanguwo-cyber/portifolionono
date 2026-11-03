@@ -3,8 +3,8 @@ import { Navigation } from "@/components/navigation";
 import { RotatingText } from "@/components/rotating-text";
 import { About } from "@/components/about";
 import { TechnicalSkills } from "@/components/technical-skills";
-import { FeaturedProjects } from "@/components/featured-projects";
-import { EngineeringApproach } from "@/components/engineering-approach";
+import { ProfessionalExperience } from "@/components/professional-experience";
+import { SupportApproach } from "@/components/support-approach";
 import { ContactCTA } from "@/components/contact-cta";
 import { Footer } from "@/components/footer";
 
@@ -37,21 +37,21 @@ export default function HomePage() {
                   id="hero-heading"
                   className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-text-heading)] leading-tight mb-4 text-balance animate-fade-in-up"
                 >
-                  Panashe{' '}<span className="text-gradient-animate">Nyanguwo</span>
+                  Nonhlahla{' '}<span className="text-gradient-animate">Ngulube</span>
                 </h1>
                 <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-[var(--color-text-body)] leading-tight mb-6 text-balance animate-fade-in-up" style={{ animationDelay: "100ms" }}>
                   I&apos;m a <RotatingText />
                 </p>
                 <p className="text-lg md:text-xl text-[var(--color-text-muted)] leading-relaxed mb-8 max-w-xl lg:mx-0 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
-                  Building useful digital products with a security-aware mindset.
+                  Delivering excellent customer experiences across telephone and digital channels — with a proven 96% First Contact Resolution rate.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-start gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: "300ms" }}>
                   <a
-                    href="#projects"
+                    href="#experience"
                     className="inline-flex items-center gap-2 px-6 py-3 text-base font-medium text-white bg-[var(--color-primary)] rounded-lg hover:bg-[var(--color-primary-hover)] hover:shadow-xl hover:shadow-[var(--color-primary)]/25 hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    View My Work
+                    View My Experience
                     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -74,7 +74,7 @@ export default function HomePage() {
                     <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--color-success)] opacity-75 animate-ping [animation-duration:2s]" />
                     <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[var(--color-success)]" />
                   </span>
-                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-text-muted)]">Available for exciting opportunities</span>
+                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-text-muted)]">Open to new opportunities</span>
                 </div>
               </div>
 
@@ -88,7 +88,7 @@ export default function HomePage() {
                   <div className="relative aspect-square rounded-full overflow-hidden shadow-2xl ring-4 ring-white">
                     <img
                       src="/hero-photo.jpg"
-                      alt="Portrait of Panashe Nyanguwo"
+                      alt="Portrait of Nonhlahla Ngulube"
                       className="w-full h-full object-cover object-[center_20%]"
                       loading="eager"
                     />
@@ -102,14 +102,14 @@ export default function HomePage() {
         {/* About */}
         <About />
 
-        {/* Technical Skills */}
+        {/* Core Skills */}
         <TechnicalSkills />
 
-        {/* Featured Projects */}
-        <FeaturedProjects />
+        {/* Professional Experience */}
+        <ProfessionalExperience />
 
-        {/* Engineering Approach */}
-        <EngineeringApproach />
+        {/* How I Work */}
+        <SupportApproach />
 
         {/* Contact CTA */}
         <ContactCTA />

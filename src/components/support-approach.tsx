@@ -1,37 +1,40 @@
 "use client";
 
 import React from "react";
-import { Layers, Lock, Brain } from "lucide-react";
+import { HeartHandshake, Gauge, MessagesSquare } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const pillars = [
   {
-    title: "Build Scalable Systems",
-    description: "Designing distributed architectures that handle growth gracefully. From edge-optimized APIs to resilient data layers, every component is built to scale.",
-    icon: Layers,
+    title: "Put the Customer First",
+    description:
+      "Resolving issues at the first point of contact is the goal. A 96% First Contact Resolution rate at Logicall Live reflects listening carefully and offering practical solutions.",
+    icon: HeartHandshake,
     color: "text-[var(--color-primary)]",
     bgColor: "bg-[var(--color-primary-light)]",
     accent: "border-l-4 border-[var(--color-primary)]",
   },
   {
-    title: "Engineer Secure Architectures",
-    description: "Security is not an afterthought. Zero-trust principles, cryptographic verification, and threat modeling (STRIDE) are embedded from day one.",
-    icon: Lock,
+    title: "Consistent Quality & Follow-Through",
+    description:
+      "Maintaining 95% SLA compliance through timely responses, organised records and consistent follow-up — keeping customers informed every step of the way.",
+    icon: Gauge,
     color: "text-[var(--color-success)]",
     bgColor: "bg-[var(--color-success-light)]",
     accent: "border-l-4 border-[var(--color-success)]",
   },
   {
-    title: "Create Intelligent Experiences",
-    description: "Integrating AI thoughtfully — RAG systems, prompt engineering, and conversational interfaces that solve real problems, not just demos.",
-    icon: Brain,
+    title: "Communicate Clearly",
+    description:
+      "Fluent in English and Shona, with Ndebele as a native language — explaining products and services clearly across telephone, email, WhatsApp and digital channels.",
+    icon: MessagesSquare,
     color: "text-[var(--color-cyan)]",
     bgColor: "bg-[var(--color-cyan-light)]",
     accent: "border-l-4 border-[var(--color-cyan)]",
   },
 ];
 
-export function EngineeringApproach() {
+export function SupportApproach() {
   return (
     <section
       className="relative py-16 md:py-24 bg-[var(--color-bg-pale-violet)]"
@@ -45,13 +48,13 @@ export function EngineeringApproach() {
         <Reveal>
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-block px-3 py-1 text-xs font-medium text-[var(--color-primary)] bg-[var(--color-primary-light)] rounded-full mb-4">
-            ENGINEERING PHILOSOPHY
+            HOW I WORK
           </span>
           <h2 id="approach-heading" className="text-3xl md:text-4xl font-bold text-[var(--color-text-heading)] mb-4 leading-tight">
-            How I <span className="text-gradient-animate">Approach</span> Engineering
+            How I <span className="text-gradient-animate">Support</span> Customers
           </h2>
           <p className="text-[var(--color-text-muted)] text-lg">
-            Three pillars that guide every technical decision and architectural choice.
+            Three principles that guide every interaction, every shift.
           </p>
         </div>
         </Reveal>
